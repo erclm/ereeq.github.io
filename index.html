@@ -1,6 +1,137 @@
----
-layout: post
-title: test
----
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Lim</title>
+<meta name="Description" content="Personal Portfolio of Eric Lim">
+<meta name="Keywords" content="Film, Photography,">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Lato:300,400,500,600' rel='stylesheet' type='text/css' />
+  <link href='https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css' rel='stylesheet' type='text/css' />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+	</script>
+  <link href='main.css' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <header>
+    <div class="overlay">
+      <div class="container">
+        <div class="hero">
+          <h1 id="top"><strong>Eric Lim</strong></h1>
+          <h2>SoCal Filmmaker</h2>Also: GGServers COO and Student. John 3:16<br/>
+            <a href="#about" class="btn btn-large btn-full">About</a>
+            <a href="#references" class="btn btn-full">References</a>
+            <div class="btn btn-full dropdown">
+              <span>Portfolio</span>
+              <div class="dropdown-content">
+                <a href="/films.html">Films</a>
+                <a href="/otherwork.html">Other</a>
+                <a href="/bts.html">Behind the Scenes</a>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-full">Contact</a>
+        </div>
+      </div>
 
-Hello World
+    </div>
+  </header>
+  <div class="container">
+    <div class="box">
+      <div class="inner">
+        <span class="icon ion-ribbon-a"></span>
+        <h2>Quality</h2>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="inner">
+        <span class="icon ion-person-stalker"></span>
+        <h2>Cooperative</h2>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="inner">
+        <span class="icon ion-locked"></span>
+        <h2>Secure</h2>
+      </div>
+    </div>
+  </div>
+  <br clear="both">
+
+  <section id="about">
+    <div class="container">
+
+      <h1>About Eric</h1>
+      <div class="box">
+        <div class="inner">
+          <img src="img/eric1.jpg" alt="Mountain View" style="width:160px;height:160px;border-radius: 100px;-webkit-border-radius: 100px;-moz-border-radius: 100px;padding:1px;border:1px solid #c5effd;background-color:#c5effd;">
+        </div>
+      </div>
+      <p>Eric is a Filmmaker from Southern California. Eric stives to create quality film to deliver genuine happiness to people. </p>
+      <br/>
+      <h2>Education</h2>
+      <p><ul><li>Arnold O. Beckman High School (Graduation Date: June 20, 2017)</li>
+      <li>Irvine Valley College, C-Programming (Summer, 2015)</li></ul></p>
+      <h2>Experience</h2>
+      <p><h4>Operations Manager, GGServers LTD.</h4> GGServers is a global computer networking company. Headquarters are located in Toronto, Canada.</p>
+    </div>
+    </section>
+  <br clear="both">
+  <section id="references">
+    <div class="container">
+      <h1>References</h1>
+      <p><ul><li>Mr. Chris Perdue, Film Director, Beckman High School Teacher (<a href="mailto:socalsff@gmail.com">SoCalSFF@gmail.com</a>)</li>
+        <li>Mr. James Copeland, CEO, GGServers. (<a href="mailto:james@ggservers.com">James@GGServers.com</a>)</li>
+        <li>Mr. Siu-Ling Sit, Science Teacher, Beckman High School. (<a href="mailto:ssit@tustin.k12.ca.us">SSit@tustin.k12.ca.us</a>)</li>
+      </ul></p>
+    </div>
+  </section>
+  <br clear="both">
+  <section id="contact">
+    <div class="container">
+      <center><p><span class="icon ion-at"></span><b>Contact me!</b></p>
+      <p><form id="contact_form" action="mailto:hello@ericl.im" method="POST" enctype="multipart/form-data">
+	      <div class="row">
+		      <label for="name">Your name:</label><br />
+		      <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+        </div>
+	      <div class="row">
+	         <label for="email">Your email:</label><br />
+		       <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	      </div>
+	      <div class="row">
+		        <label for="message">Your message:</label><br />
+		        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	      </div>
+	      <input id="submit_button" type="submit" value="Send email"/>
+      </form></p></center>
+    </div>
+  </section>
+  <br clear="both">
+  <div class="container">
+    <p><center><a href="#top">Back to top</a></center></p>
+  </div>
+  <br clear="both">
+  <div class="container">
+    <div class="footer" style="clear: both; margin-top: 30px; height:60px; text-align: center; font-size:14px; color: rgb(170, 170, 170);">
+      <span>&copy; 2014~2016 Eric Lim. Made by <a href="https://ericl.im/">Eric Lim</a></span>
+      <span>Hosted by <a href="https://ggservers.com/">GGServers</a></span>
+    </div>
+  </div>
+</body>
+</html>
